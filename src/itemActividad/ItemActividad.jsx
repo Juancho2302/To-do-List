@@ -1,0 +1,28 @@
+import './styles.css';
+import Incomplete from './assets/uncomplet.png'
+import Complete from './assets/complet.png'
+import PropTypes from 'prop-types';
+
+function ItemActividad(props) {
+    return(
+        <div className="itemActivity"
+            onClick={() => {props.viewDetail(props.data)}}
+        >
+            <div className="imgContainer">
+                <img src={props.data.estado ? Complete : Incomplete} className='imgStyle' />
+            </div>
+            <div className="textContainer">
+                <p style={{margin: 0}}>{props.data.nombre}</p>
+                <p style={{margin: 0}}>{props.data.descripcion}</p>
+                <p style={{margin: 0}}>{props.data.fecha}</p>
+            </div>
+        </div>
+    );
+};
+
+ItemActividad.propTypes= {
+    data: PropTypes.array.isRequired,
+    viewDetail: PropTypes.func.isRequired,
+  };
+
+export default ItemActividad;

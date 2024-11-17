@@ -1,0 +1,43 @@
+.actividad-detalle {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff6680;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    justify-content: space-around;
+    align-items: start;
+    color: white;
+    font-family: 'Consolas';
+    min-height: 200px;
+  }
+  
+  .imgContainer {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 120px;
+  }
+  
+  .actividad-detalle button {
+    flex-grow: 1;
+    color: black;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .actividad-detalle button:hover {
+    background-color: #b34766;
+  }
+  

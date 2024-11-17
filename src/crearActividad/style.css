@@ -1,0 +1,30 @@
+.actividad-crear {
+  display: flex;
+  flex-direction: column;
+  background-color:#ff6680;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: black;
+  justify-content: space-around;
+  align-items: start;
+  font-family: 'Consolas';
+  color:white;
+}
+  
+.actividad-crear button,
+.actividad-crear input{
+  flex-grow: 1;
+  width: 100%;
+  color:"#7cff66";
+  transition: background-color 0.3s ease;
+}
+
+.actividad-crear button:hover{
+  background-color: #b34766;
+}
+
+.actividad-crear input{
+  text-align: center;
+}

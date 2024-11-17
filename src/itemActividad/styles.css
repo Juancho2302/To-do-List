@@ -1,0 +1,36 @@
+.imgStyle {
+  width: 20px;
+  height: auto;
+  object-fit: cover;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer p {
+  margin: 0;
+}
+
+.imgContainer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.itemActivity {
+  display: flex;
+  margin: 4px;
+  border-radius: 8px;
+  padding: 4px;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.itemActivity:hover {
+  background-color: #f0f0f0; 
+}
